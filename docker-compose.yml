@@ -1,0 +1,14 @@
+version: "3"
+services:
+  python-app:
+    build: ./python-app
+    ports:
+      - "5000:5000"
+  node-app:
+    build: ./node-app
+    ports:
+      - "3000:3000"
+  java-app:
+    build: ./java-app
+    ports:
+      - "8080:8080"
