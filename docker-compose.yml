@@ -1,14 +1,14 @@
 version: "3"
 services:
   python-app:
-    build: ./python-app
+    build: ./python-flask-weather
     ports:
       - "5000:5000"
   node-app:
-    build: ./node-app
+    build: ./nodejs-bookstore-api
     ports:
       - "3000:3000"
   java-app:
-    build: ./java-app
+    build: ./java-springboot-taskmanager
     ports:
-      - "8080:8080"
+      - "4000:4000"
